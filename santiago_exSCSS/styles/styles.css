@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: #282828;
+}
+
+p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.container {
+  border: 1px solid #eeecf1;
+  border-radius: 0.25rem;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #f9f8fb)), #ffffff;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #f9f8fb 50%), #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 50%;
+  padding: 30px;
+}
+
+.container .text {
+  margin-right: 3rem;
+}
+
+.container .text a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555555;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: #ffffff;
+  background: #6638f0;
+  padding: 0.625rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.container-two {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-two .gradient {
+  width: 400px;
+  background: linear-gradient(154.5deg, #6638f0 0%, #5cc9f5 100%);
+}
+
+.container-two .modalbox-text {
+  padding: 1.5rem 1.5rem 4.75rem 1.5rem;
+}
+
+.container-two .modalbox-text a.button {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555555;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: #ffffff;
+  background: #6638f0;
+  padding: 0.625rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.container-two .modalbox-text a.link {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #555555;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  padding: 0.625rem 1rem;
+  color: #6638f0;
+}
+/*# sourceMappingURL=styles.css.map */

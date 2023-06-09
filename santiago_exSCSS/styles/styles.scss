@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+//Variables
+$headline-font-color: #282828;
+$body-font-color: #555555;
+$link-bg-color: #6638f0;
+$link-purple: #6638f0;
+$link-white: #ffffff;
+
+//mixins
+@mixin heading {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: $headline-font-color;
+}
+
+@mixin body {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  color: $body-font-color;
+}
+
+@mixin button {
+  @include body();
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  color: $link-white;
+  background: $link-bg-color;
+  padding: 0.625rem 1rem;
+  border-radius: 0.25rem;
+}
+
+@mixin link {
+  @include body();
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  padding: 0.625rem 1rem;
+  color: $link-purple;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include heading();
+}
+
+p {
+  @include body();
+}
+
+.container {
+  border: 1px solid #eeecf1;
+  border-radius: 0.25rem;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #f9f8fb 50%),
+    #ffffff;
+  display: flex;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 50%;
+  padding: 30px;
+
+  .text {
+    margin-right: 3rem;
+
+    a {
+      @include button();
+    }
+  }
+}
+
+.container-two {
+  width: 20%;
+  display: flex;
+
+  .gradient {
+    width: 400px;
+    background: linear-gradient(154.5deg, #6638f0 0%, #5cc9f5 100%);
+  }
+
+  .modalbox-text {
+    padding: 1.5rem 1.5rem 4.75rem 1.5rem;
+
+    a.button {
+      @include button();
+    }
+
+    a.link {
+      @include link();
+    }
+  }
+}
